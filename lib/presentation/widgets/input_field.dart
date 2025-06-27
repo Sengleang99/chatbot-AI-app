@@ -44,19 +44,19 @@ class _InputFieldState extends State<InputField> {
               textInputAction:
                   TextInputAction.newline, // For line breaks with Enter
               decoration: InputDecoration(
-                hintText: 'Type a message...',
+                hintText: 'message...',
                 filled: true, // Makes background color visible
-                fillColor: Colors.grey[300], // Light grey background
+                fillColor: Colors.grey[200],
                 border: OutlineInputBorder(
                   borderRadius: BorderRadius.circular(15),
                 ),
                 enabledBorder: OutlineInputBorder(
                   borderRadius: BorderRadius.circular(15),
-                  borderSide: const BorderSide(color: Colors.white),
+                  borderSide: BorderSide(color: Colors.grey[200]!),
                 ),
                 focusedBorder: OutlineInputBorder(
                   borderRadius: BorderRadius.circular(15),
-                  borderSide: const BorderSide(color: Colors.white),
+                  borderSide: BorderSide(color: Colors.grey[200]!),
                 ),
               ),
               onSubmitted: (_) => _handleSubmit(),
