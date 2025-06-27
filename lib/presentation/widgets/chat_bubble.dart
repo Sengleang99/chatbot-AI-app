@@ -32,13 +32,6 @@ class ChatBubble extends StatelessWidget {
               child: Text(message.text),
             ),
           ),
-          if (message.isUser) ...[
-            const SizedBox(width: 8),
-            const CircleAvatar(
-              backgroundColor: Colors.grey,
-              child: Icon(Icons.person, color: Colors.white),
-            ),
-          ],
         ],
       ),
     );
